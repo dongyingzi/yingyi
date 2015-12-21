@@ -1,0 +1,88 @@
+<include src="../inc/_head.html" pageTitle="作品"></include>
+<include src="../inc/_topNav.html" active3="active"></include>
+<div class="container mt30 ">
+    <div class="row mb30">
+        <include src="../inc/_carousel.html" pageTitle=""></include>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">传统艺术</a>
+                <a href="#" class="list-group-item">设计艺术</a>
+                <a href="#" class="list-group-item">媒体艺术</a>
+            </div>
+        </div>
+        <div class="col-md-9 thumbnailList ">
+            <include src="../inc/_myselfWorks.html" layout="col-sm-4 col-md-4">
+                <span class="glyphicon glyphicon-heart operate-heart leftPos" aria-hidden="true" data-toggle="modal" data-target=".bs-collect-modal"></span>
+            </include>
+        </div>
+    </div>
+</div>
+<include src="../inc/_largerTitleContentAlert.html" modalTitle="添加到收藏" modalClass="bs-collect-modal">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="media">
+                <div class="media-left">
+                    <h5 style="width:70px">我的标签：</h5>
+                </div>
+                <div class="media-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="selectPut select">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <button type="button" class="btn btn-default btn-sm addBtn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(function() {
+        var selectPut = $('.selectPut');
+        selectPut.on('click', function(event) {
+            event.preventDefault();
+            if ($(this).hasClass('select')) {
+                $(this).removeClass('select')
+            } else {
+                $(this).addClass('select')
+            }
+        })
+    })
+    </script>
+</include>
+<include src="../inc/_footer.html"></include>

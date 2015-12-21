@@ -1,0 +1,98 @@
+<include src="../inc/_head.html" pageTitle="艺讯"></include>
+<include src="../inc/_topNav.html" active4="active"></include>
+<div class="container mt30 ">
+    <div class="row mb30">
+        <include src="../inc/_carousel.html" pageTitle=""></include>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">艺术资讯</a>
+                <a href="#" class="list-group-item">艺术原创</a>
+                <a href="#" class="list-group-item">艺术评论</a>
+                <a href="#" class="list-group-item">活动游记</a>
+            </div>
+        </div>
+        <div class="col-md-9 thumbnailList ">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul id="mySubTabsCollect" class="myNav navSubPill" role="tablist">
+                        <li role="presentation" class="active"><a href="#subhomecollect" id="subhome-tab-collect" role="tab" data-toggle="tab" aria-controls="subhome" aria-expanded="true">摄影</a></li>
+                        <li role="presentation"><a href="#subhomecollect2" role="tab" id="subhome-tab-collect2" data-toggle="tab" aria-controls="subhome2" aria-expanded="false">油画</a></li>
+                        <li role="presentation"><a href="#subhomecollect3" role="tab" id="subhome-tab-collect3" data-toggle="tab" aria-controls="home3" aria-expanded="false">图型设计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <include src="../inc/_myselfArttrain.html" layout="col-sm-4 col-md-4">
+                <span class="glyphicon glyphicon-heart operate-heart leftPos" aria-hidden="true" data-toggle="modal" data-target=".bs-collect-modal"></span>
+            </include>
+        </div>
+    </div>
+</div>
+<include src="../inc/_largerTitleContentAlert.html" modalTitle="添加到收藏" modalClass="bs-collect-modal">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="media">
+                <div class="media-left">
+                    <h5 style="width:70px">我的标签：</h5>
+                </div>
+                <div class="media-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="selectPut select">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <div class="selectPut">
+                                网页设计
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                            <button type="button" class="btn btn-default btn-sm addBtn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(function() {
+        var selectPut = $('.selectPut');
+        selectPut.on('click', function(event) {
+            event.preventDefault();
+            if ($(this).hasClass('select')) {
+                $(this).removeClass('select')
+            } else {
+                $(this).addClass('select')
+            }
+        })
+    })
+    </script>
+</include>
+<include src="../inc/_footer.html"></include>
